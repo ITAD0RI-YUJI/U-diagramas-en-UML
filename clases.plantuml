@@ -8,13 +8,24 @@ Clase05 o-- Clase06
 Clase07 -- Clase08
 Clase09 .. Clase010
 
-Interface <|.. Clase12
+interface Interface11
+Interface11 <|.. Clase12
+
+abstract class Clase12
+Clase12 <|-- Clase13
 
 Clase01 : + operacion01()
 Clase01 : ~ operacion01.1()
 
 Clase01 : - attr01
+Clase01 : {static} opereacion_de_clase()
 
 Clase03 : # Clase04[] parte01
+
+Interface11 : metodo01()
+Interface11 : metodo02()
+
+Clase12 : {abstract} metodo01()
+Clase12 : metodo02()
 
 @enduml
