@@ -1,0 +1,20 @@
+' pag 59   del documento de POO sobre Plant UML
+
+@startuml clases
+
+Clase01 <|-- Clase02
+Clase03 *-- Clase04
+Clase05 o-- Clase06
+Clase07 -- Clase08
+Clase09 .. Clase010
+
+Interface <|.. Clase12
+
+Clase01 : + operacion01()
+Clase01 : ~ operacion01.1()
+
+Clase01 : - attr01
+
+Clase03 : # Clase04[] parte01
+
+@enduml
