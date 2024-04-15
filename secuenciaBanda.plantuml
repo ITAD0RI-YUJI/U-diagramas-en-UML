@@ -1,0 +1,11 @@
+@startuml Diagrama de secuencia Banda
+
+Principal -> Banda : afinar_banda()
+
+loop n veces
+    ' va a hacer una vuelta por cada músico de la banda
+    Banda -> Musico : afinar_instrumento()
+    Musico -> Instrumento : afinar()
+end
+
+@enduml
